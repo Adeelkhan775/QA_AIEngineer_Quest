@@ -1,0 +1,34 @@
+{
+  "label": "SYNTHETIC TEST DATA \u2014 NOT LIVE PRODUCT DATA",
+  "input_ping_rows": 2520,
+  "unique_driver_timestamp_keys": 2400,
+  "drivers": 4,
+  "injected_fault_label_counts": {
+    "duplicate": 120,
+    "none": 2320,
+    "off_road_gt_100m": 48,
+    "speed_spike_gt_150kmh": 32
+  },
+  "anomaly_rows_reported": 1402,
+  "anomaly_reason_counts": {
+    "duplicate_driver_timestamp": 120,
+    "gap_seconds": 8,
+    "implied_speed_kmh": 32,
+    "off_road_offset_m": 48,
+    "out_of_order_arrival": 1194
+  },
+  "comparison_rows": 24,
+  "legacy_total_km": 764.139,
+  "corrected_total_km": 240.0,
+  "assumptions": {
+    "timezone": "UTC+09:00 fixed offset",
+    "zone_km": [
+      5.0,
+      25.0
+    ],
+    "max_lateral_offset_m": 100,
+    "max_speed_kmh": 150,
+    "max_gap_seconds": 30,
+    "segment_day_attribution": "UTC+9 date of ending ping"
+  }
+}

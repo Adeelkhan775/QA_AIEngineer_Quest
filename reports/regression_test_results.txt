@@ -1,0 +1,18 @@
+test_baseline_and_corrected_reports_use_same_local_day (test_distance.DistanceRegressionTests.test_baseline_and_corrected_reports_use_same_local_day) ... ok
+test_corrected_result_is_arrival_order_independent_and_flags_late_ping (test_distance.DistanceRegressionTests.test_corrected_result_is_arrival_order_independent_and_flags_late_ping) ... ok
+test_dataset_has_expected_size_and_fault_counts (test_distance.DistanceRegressionTests.test_dataset_has_expected_size_and_fault_counts) ... ok
+test_duplicate_timestamp_counts_once (test_distance.DistanceRegressionTests.test_duplicate_timestamp_counts_once) ... ok
+test_exact_speed_and_zone_boundaries_are_included (test_distance.DistanceRegressionTests.test_exact_speed_and_zone_boundaries_are_included) ... ok
+test_generated_dataset_is_large_and_faulty (test_distance.DistanceRegressionTests.test_generated_dataset_is_large_and_faulty) ... ok
+test_legacy_is_sensitive_to_arrival_order (test_distance.DistanceRegressionTests.test_legacy_is_sensitive_to_arrival_order) ... ok
+test_local_day_differs_from_utc_day (test_distance.DistanceRegressionTests.test_local_day_differs_from_utc_day) ... ok
+test_long_gap_is_not_counted (test_distance.DistanceRegressionTests.test_long_gap_is_not_counted) ... ok
+test_offroad_point_is_rejected (test_distance.DistanceRegressionTests.test_offroad_point_is_rejected) ... ok
+test_outside_zone_is_not_counted (test_distance.DistanceRegressionTests.test_outside_zone_is_not_counted) ... ok
+test_segment_is_attributed_to_ending_ping_local_day (test_distance.DistanceRegressionTests.test_segment_is_attributed_to_ending_ping_local_day) ... ok
+test_speed_spike_is_rejected_and_valid_segments_continue (test_distance.DistanceRegressionTests.test_speed_spike_is_rejected_and_valid_segments_continue) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.016s
+
+OK
