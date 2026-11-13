@@ -23,7 +23,7 @@ Dataset: `data/gps_pings_synthetic.csv` (2,520 rows: 2,400 base pings plus 120 d
 
 ## Scope and assumptions
 
-- A synthetic straight road is represented by longitude-derived along-road position `s_km`; latitude offset represents lateral GPS error.
+- A synthetic straight road is represented by longitude-derived along-road distance in kilometers (the `synthetic_truth_s_km` test column); latitude offset represents lateral GPS error.
 - Campaign zone is the along-road interval 5.0–25.0 km, inclusive.
 - Daily reporting uses local UTC+9 date.
 - Duplicate policy: same driver + exact UTC timestamp counts once; first input row is retained.
