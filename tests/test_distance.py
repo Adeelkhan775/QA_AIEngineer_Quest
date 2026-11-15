@@ -205,13 +205,7 @@ class DistanceRegressionTests(unittest.TestCase):
         self.assertIn("speed_spike_gt_150kmh", fault_labels)
 
     def test_outside_zone_is_not_counted(self):
-        """
-        KNOWN LIMITATION: Segments that straddle the zone boundary (e.g., 4.8 to 5.0)
-        are currently discarded entirely because the logic requires BOTH endpoints
-        to be inside the zone. A future refinement would clip the segment to count
-        the partial distance (0.2km in this case). For this Quest, this strict
-        boundary check is accepted to ensure auditable, deterministic behavior.
-        """
+      
         first_ping = create_ping("a", "d1", "2026-10-20T15:00:00Z", 4.8)
         boundary_ping = create_ping("b", "d1", "2026-10-20T15:00:10Z", 5.0)
         next_ping = create_ping("c", "d1", "2026-10-20T15:00:20Z", 5.2)
@@ -221,13 +215,8 @@ class DistanceRegressionTests(unittest.TestCase):
         self.assertAlmostEqual(sum(distance_totals.values()), 0.2, places=6)
 
     def test_outside_zone_is_not_counted(self):
-        """
-        KNOWN LIMITATION: Segments that straddle the zone boundary (e.g., 4.8 to 5.0)
-        are currently discarded entirely because the logic requires BOTH endpoints
-        to be inside the zone. A future refinement would clip the segment to count
-        the partial distance (0.2km in this case). For this Quest, this strict
-        boundary check is accepted to ensure auditable, deterministic behavior.
-        """
+        
+        
         first_ping = create_ping("a", "d1", "2026-10-20T15:00:00Z", 4.8)
         boundary_ping = create_ping("b", "d1", "2026-10-20T15:00:10Z", 5.0)
         next_ping = create_ping("c", "d1", "2026-10-20T15:00:20Z", 5.2)
